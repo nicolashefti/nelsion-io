@@ -1,0 +1,12 @@
+### Composer
+composer.lock
+
+### JetBrains
+/.idea/
+
+### Symfony
+/vendor/
+
+### Application data
+data/*.db
+data/*.log

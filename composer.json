@@ -1,0 +1,16 @@
+{
+    "name": "nicolashefti/nelson-io",
+    "description": "Web application and API for Nelson connected object",
+    "require": {
+        "silex/silex": "^2.0",
+        "monolog/monolog": "^1.22",
+        "doctrine/dbal": "^2.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Hefti",
+            "email": "nicolas@hefti.fr"
+        }
+    ]
+}
