@@ -69,7 +69,21 @@ $app->get('/nelson/{id}', function ($id) use ($app) {
         'position' => $nelson['position'],
     ], 200);
 
-})->value('id', null);
+});
+
+$app->get('/nelson/{id}/position', function ($id) use ($app) {
+
+    $sql = "SELECT * FROM nelson WHERE nelson.id = ?";
+    $nelson = $app['db']->fetchAssoc($sql, [$id]);
+
+    if (!$nelson) {
+        return $app->json([
+            'message' => 'Nelson not found'
+        ], 404);
+    }
+
+    return $nelson['position'];
+});
 
 $app->post('/nelson/{id}', function (Request $request, $id) use ($app) {
 

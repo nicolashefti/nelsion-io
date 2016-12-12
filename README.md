@@ -1,9 +1,9 @@
 Nelson I/O
 ========
 
-Web application and REST API for Nelson.
+Web application and REST API to control Nelson, a connected object.
 
-Based on Sile, SQLITE.
+Based on Angular 1.5.X, Silex and SQLITE.
 
 # Install
 
@@ -19,3 +19,4 @@ For development purpose (do not use in production)
 cd htdocs/api
 php -S localhost:8081
 ```
+
